@@ -8,18 +8,17 @@ Se requiere un custom binding con:
     MessageProtectionOrder = MessageProtectionOrder.SignBeforeEncrypt
     SecurityHeaderLayout = SecurityHeaderLayout.LaxTimestampLast
 
-El mensaje SOAP va sin encriptar, se requiere que el contrato del servicio este solo en firma:
+El mensaje SOAP va sin encriptar, se requiere que el nivel de protección del contrato del servicio esté solo en firma:
 
     System.ServiceModel.ServiceContractAttribute( [...], ProtectionLevel = System.Net.Security.ProtectionLevel.Sign)
 
 
-Documentación del servicio:
-https://administracionelectronica.gob.es/ctt/face/descargas
+Documentación del servicio:https://administracionelectronica.gob.es/ctt/face/descargas
 
 Donde darse de alta como proveedor:
-Entorno de pruebas->
-https://se-face.redsara.es/es/proveedores
-producción->
-https://face.gob.es/es/proveedores
+
+Entorno de pruebas: https://se-face.redsara.es/es/proveedores
+
+Producción: https://face.gob.es/es/proveedores
 
 
