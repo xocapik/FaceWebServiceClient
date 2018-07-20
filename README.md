@@ -22,6 +22,8 @@ Entorno de pruebas: https://se-face.redsara.es/es/proveedores
 Producción: https://face.gob.es/es/proveedores
 
 
+# FaceB2B
+
 Notas para conectar con el Servicio Web de https://webservice.faceb2b.gob.es usando WCF:
 
 Se requiere un custom binding igual al anterior pero a parte necesita definir un Custom Algorithm Suite que firme con rsa-sha256 y digest con sha1:
