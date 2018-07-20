@@ -22,7 +22,7 @@ Entorno de pruebas: https://se-face.redsara.es/es/proveedores
 Producción: https://face.gob.es/es/proveedores
 
 
-# FaceB2B
+# FaceB2B 
 
 Notas para conectar con el Servicio Web de https://webservice.faceb2b.gob.es usando WCF:
 
@@ -36,4 +36,6 @@ El mensaje SOAP va sin encriptar, se requiere que el nivel de protección del co
     
 El mensaje tiene que ir sin VsDebuggerCausalityData, se puede quitar de varias maneras como por ejemplo crear un endpointBehaviour
 
-    factory.Endpoint.Behaviors.Add(new SimpleEndpointBehavior());
+    factory.Endpoint.Behaviors.Add(new FaceB2BCustomEndpointBehavior());
+    
+(Esta info es oro :) )
