@@ -19,15 +19,15 @@ namespace servicioFaceWCF
             {
                 address = new EndpointAddress(
                     new Uri("https://se-face-webservice.redsara.es/facturasspp2"),
-                    EndpointIdentity.CreateDnsIdentity("DTIC AGE PRUEBAS"));
-                serverCertificate = new X509Certificate2(@"C:\temp\DTICAGEPRUEBAS.cer");
+                    EndpointIdentity.CreateDnsIdentity("SELLO ENTIDAD SGAD PRUEBAS"));
+                serverCertificate = new X509Certificate2(@"C:\temp\SELLO-ENTIDAD-SGAD-PRUEBAS.cer");
             }
             else //production mode
             {
                 address = new EndpointAddress(
                 new Uri("https://webservice.face.gob.es/facturasspp2"),
-                EndpointIdentity.CreateDnsIdentity("DTIC AGE"));
-                serverCertificate = new X509Certificate2(@"C:\temp\DTICAGE.cer");
+                EndpointIdentity.CreateDnsIdentity("SELLO DE ENTIDAD SGAD"));
+                serverCertificate = new X509Certificate2(@"C:\temp\SELLO-DE-ENTIDAD-SGAD.cer");
             }
             
             //Our certificate, must be
