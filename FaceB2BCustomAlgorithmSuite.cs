@@ -21,7 +21,7 @@ using System.ServiceModel.Security;
 
         public override string DefaultDigestAlgorithm
         {
-            get { return SecurityAlgorithms.Sha1Digest; }
+            get { return SecurityAlgorithms.Sha256Digest; }
         }
 
         public override string DefaultEncryptionAlgorithm
