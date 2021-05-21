@@ -9,9 +9,11 @@ Se requiere un custom binding con:
     SecurityHeaderLayout = SecurityHeaderLayout.LaxTimestampLast
 
 El mensaje SOAP va sin encriptar, se requiere que el nivel de protección del contrato del servicio esté solo en firma:
+Ubicacion: Reference.cs
 
     System.ServiceModel.ServiceContractAttribute( [...], ProtectionLevel = System.Net.Security.ProtectionLevel.Sign)
-
+    public interface FacturaSSPPWebServiceProxyPort {
+    ....
 
 Documentación del servicio:https://administracionelectronica.gob.es/ctt/face/descargas
 
@@ -39,3 +41,7 @@ El mensaje tiene que ir sin VsDebuggerCausalityData, se puede quitar de varias m
     factory.Endpoint.Behaviors.Add(new FaceB2BCustomEndpointBehavior());
     
 (Esta info es oro :) )
+
+
+
+
