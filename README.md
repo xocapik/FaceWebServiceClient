@@ -26,6 +26,9 @@ Producción: https://face.gob.es/es/proveedores
 
 # FaceB2B 
 
+El area de descargas, para encontrar los malditos certificados
+https://administracionelectronica.gob.es/ctt/faceb2b/descargas
+
 Notas para conectar con el Servicio Web de https://webservice.faceb2b.gob.es usando WCF:
 
 Se requiere un custom binding igual al anterior pero a parte necesita definir un Custom Algorithm Suite que firme con rsa-sha256 y digest con sha1:
