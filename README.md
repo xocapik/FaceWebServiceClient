@@ -28,6 +28,7 @@ Producción: https://face.gob.es/es/proveedores
 
 El area de descargas, para encontrar los malditos certificados
 https://administracionelectronica.gob.es/ctt/faceb2b/descargas
+Si no están aqui podeis ir al endpoint del servicio y descargar el certificado que usa directamente 
 
 Notas para conectar con el Servicio Web de https://webservice.faceb2b.gob.es usando WCF:
 
